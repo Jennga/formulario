@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejercicio 13</title>
+  </head>
+  <body>
+    <h1>TELEBIRRIA</h1>
+    <h2>PARA REALIZAR SU PEDIDO, RELLENE EL FORMULARIO</h2>
+    <form action="jengaestuidos@gmail.com" method="post">
+      <fieldset>
+        <legend>Datos personales y envío</legend>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+        </div>
+        <div>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" name="apellidos" id="apellidos" />
+        </div>
+        <div>
+          <label for="domicilio">Domicilio</label>
+          <input type="text" name="domicilio" id="domicilio" />
+        </div>
+        <div>
+          <label for="localidad">Localidad</label>
+          <input type="text" name="localidad" id="localidad" />
+        </div>
+        <div>
+          <label for="codigo_postal">Código Postal</label>
+          <input type="number" name="codigo_postal" id="localidad" />
+        </div>
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Elija la opción de entrega</legend>
+        <div>
+          <input type="radio" name="opcion" checked="checked" id="opcion" />
+          <label for="opcion">Recoger en el local</label>
+        </div>
+        <div>
+          <input type="radio" name="opcion" id="opcion" />
+          <label for="opcion">Enviar a domicilio</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>¿Quiere que le enviemos nuestras ofertas?</legend>
+        <div>
+          <input type="checkbox" name="enviar" value="si" id="enviar" />
+          <label for="enviar">Enviar al domicilio</label>
+        </div>
+        <div>
+          <input type="checkbox" name="enviar" value="si" id="enviar" />
+          <label for="enviar">Enviar por mail</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Eliga su menú</legend>
+        <div>Tamaño del bocadillo</div>
+        <div>
+          <select size="4">
+            <option value="value" selected="selected">Pequeño</option>
+            <option value="value" selected="selected">Mediano</option>
+            <option value="value" selected="selected">Grande</option>
+            <option value="value" selected="selected">Enorme</option>
+          </select>
+          <div>Contendio del bocadillo</div>
+          <select name="Contenido del bocadillo" size="4">
+            <option value="value" selected="selected">Anchoas</option>
+            <option value="value" selected="selected">Calamares</option>
+            <option value="value" selected="selected">Mejillon</option>
+            <option value="value" selected="selected">Jamón</option>
+          </select>
+        </div>
+        <div>
+          <div>Puede añadir alguna sugerencia</div>
+          <textarea
+            name=""
+            id=""
+            cols="70"
+            rows="10"
+            placeholder="Por ejemplo que calienten el pan, etc"
+          ></textarea>
+        </div>
+      </fieldset>
+      <div>
+        <input type="submit" value="Enviar datos" />
+      </div>
+    </form>
+  </body>
+</html>
